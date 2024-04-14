@@ -1,0 +1,17 @@
+.bod1{
+   
+    width: 50%;
+    height: 50%;
+}
+.bod2{
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+}
+h1{
+    color: #0d0c0c;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+}

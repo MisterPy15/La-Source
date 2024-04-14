@@ -1,0 +1,11 @@
+form{
+    border-radius: 15px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
+    background-color: #ffa500;
+    padding: 2rem;
+}
+input{
+    border-radius: 15px;
+}

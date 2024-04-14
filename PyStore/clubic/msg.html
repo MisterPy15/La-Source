@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msg de Bienvenue</title>
+</head>
+<script>
+    function defilerMessageBienvenue() {
+      var message = "Bienvenue sur notre site web!"; // Message à faire défiler
+      var vitesse = 150; // Vitesse de défilement (en millisecondes)
+      var index = 0;
+      
+      function defilement() {
+        document.title = message.substring(index, message.length) + message.substring(0, index);
+        index++;
+        if (index > message.length) {
+          index = 0;
+        }
+        setTimeout(defilement, vitesse);
+      }
+      
+      defilement();
+    }
+  </script> 
+
+
+<body onload="defilerMessageBienvenue()">
+    <h1>Contenu de votre page web</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis sapien et mauris pharetra, et cursus justo ultricies.</p>
+  </body>
+</html>

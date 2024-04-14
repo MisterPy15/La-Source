@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #ffa500;
+}
+
+#parag1 {
+    border: 5px solid;  /*bordure de 5px solid*/
+    border-color: transparent;
+    width: 200px; /*largeur de 200px*/
+    height: 100px; /*heuteur de 100px*/
+    padding: 10px; /*marge interne de 10px*/
+    color: blue; /*question 3*/
+  }
+#parag2{
+    border: 5px solid;  /*bordure de 5px solid*/
+    border-color: transparent;
+    width: 200px; /*largeur de 200px*/
+    height: 100px; /*heuteur de 100px*/
+    padding: 10px; /*marge interne de 10px*/
+   
+}
+  
+  #parag2 {
+    margin-top: 10px;
+  }
+  
+  body {
+    display: flex; /*alignement des deux paragrphe côte a côte*/
+    justify-content: center; /*centre des deux deux paragraphes*/
+  }
+  

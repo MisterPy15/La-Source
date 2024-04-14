@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Site E-commerce</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <style>
+    #panier {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #f1f1f1;
+      padding: 5px 10px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mon Site E-commerce</h1>
+
+  <div id="panier"> <i class="far fa-shopping-bag"></i> </li>
+  </div>
+
+  <div class="article">Article 1</div>
+  <div class="article">Article 2</div>
+  <div class="article">Article 3</div>
+  <!-- ... autres articles ... -->
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      let count = 0;
+      const panier = document.getElementById('panier');
+
+      const updatePanier = () => {
+        panier.textContent = count.toString();
+      };
+
+      const handleClick = () => {
+        count++;
+        updatePanier();
+      };
+      const handleClic = () => {
+        count--;
+        updatePanier();
+      };
+
+      const articles = document.querySelectorAll('.article');
+      articles.forEach((article) => {
+        article.addEventListener('click', handleClick);
+      });
+
+      updatePanier();
+    });
+  </script>
+</body>
+</html>
